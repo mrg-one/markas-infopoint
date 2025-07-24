@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const containerVariants = {
 
 const optionVariants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeInOut" } },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: easeInOut } },
 };
 
 const infopointVariants = {
@@ -22,7 +22,7 @@ const infopointVariants = {
     opacity: 1,
     scale: 1,
     rotate: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.7, ease: easeInOut },
   },
 };
 
